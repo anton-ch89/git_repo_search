@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./sass/reset.css">
+    <link rel="stylesheet" href="./sass/normailize.css">
+    <link type="text/css" rel="stylesheet" href="./sass/style.css">
+    <script src="./src/index.js" defer></script>
+    <title>Search</title>
+</head>
+
+<body>
+    <section class="app">
+        <div class="app__container">
+            <h1 class="app__header">Github Repos Search</h1>
+            <form class="form">
+                <input type="text" class="form__input" id="form-input" placeholder="Строка поиска">
+                <span class="mistake" hidden>Поле не может быть пустым</span>
+                <button class="form__button" id="form-button" type="submit">Найти</button>
+            </form>
+            <div class="repo">
+                <div class="nothing" hidden>
+                    <h2>По Вашему запросу ничего не найдено</h2>
+                </div>
+                <div class="error" hidden>
+                    <h2>Упс... Возникла непредвиденная ошибка</h2>
+                </div>
+
+                <div class="repo__field">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
